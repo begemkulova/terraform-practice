@@ -14,6 +14,8 @@
 # Ignore .terraform.lock.hcl file
 terraform.lock.hcl
 **/.terraform.lock.hcl/*
+**/.terraform.lock.hcl
+*/.terraform.lock.hcl
 
 # Ignore .DS_Store files on macOS
 .DS_Store
