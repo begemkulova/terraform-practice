@@ -1,0 +1,24 @@
+# Ignore Terraform state files
+*.tfstate
+*.tfstate.*
+
+# Ignore .terraform directory
+.terraform/
+
+# Ignore local .terraform directories
+**/.terraform/*
+
+# Ignore .tfplan files
+*.tfplan
+
+# Ignore .terraform.lock.hcl file
+terraform.lock.hcl
+
+# Ignore .DS_Store files on macOS
+.DS_Store
+
+# Ignore .terraformrc and terraform.rc files
+terraform.rc
+
+#Ignore my course files
+TFcourse-Materials/*
