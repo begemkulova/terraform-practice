@@ -1,3 +1,4 @@
+#Day2 hw
 variable "subnet1_cidr" {
   description = "CIDR block for Subnet 1"
   type        = string
