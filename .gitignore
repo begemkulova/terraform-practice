@@ -23,5 +23,5 @@ terraform.lock.hcl
 # Ignore .terraformrc and terraform.rc files
 terraform.rc
 
-#Ignore my course files
+# Ignore my course files
 TFcourse-Materials/*
