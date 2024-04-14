@@ -1,3 +1,4 @@
+# Day 1 hw - only t2.micro (Free Tier) and Virginia because it is free from Tax
 provider "aws" {
   region = "us-east-1"
 }

@@ -1,4 +1,4 @@
-# Day4 hw - Ohio
+# Day4 hw - ONLY VIRGINIA (without tax)
 locals {
   subnet1_cidr = "10.0.1.0/24"
   subnet2_cidr = "10.0.2.0/24"
@@ -21,7 +21,7 @@ resource "aws_vpc" "vpc" {
 resource "aws_subnet" "subnet1" {
   vpc_id            = aws_vpc.vpc.id
   cidr_block        = local.subnet1_cidr
-  availability_zone = "us-east-2a"
+  availability_zone = "us-east-1a"
   
   lifecycle {
     create_before_destroy = true
@@ -37,7 +37,7 @@ resource "aws_subnet" "subnet1" {
 resource "aws_subnet" "subnet2" {
   vpc_id            = aws_vpc.vpc.id
   cidr_block        = local.subnet2_cidr
-  availability_zone = "us-east-2b"
+  availability_zone = "us-east-1b"
   
   lifecycle {
     create_before_destroy = true

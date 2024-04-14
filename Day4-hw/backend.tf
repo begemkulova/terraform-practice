@@ -4,7 +4,7 @@ terraform {
   backend "s3" {
     bucket         = "bekaiym-s3-terraform"
     key            = "terraform.tfstate"
-    region         = "us-east-2"
+    region         = "us-east-1"
 
     # Use the DynamoDB table created above
     dynamodb_table = "terraform-state-lock"

@@ -1,4 +1,4 @@
-#Day2 hw
+#Day2 hw - only Viriginia because it is free from Tax
 variable "subnet1_cidr" {
   description = "CIDR block for Subnet 1"
   type        = string

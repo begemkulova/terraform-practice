@@ -1,4 +1,4 @@
-# Day3 hw
+# Day3 hw - Only Virginia because it is free from Tax
 variable "subnet1_cidr" {
   description = "CIDR block for Subnet 1"
   type        = string
@@ -18,7 +18,7 @@ variable "ami_filter" {
 }
 
 provider "aws" {
-  region = "us-west-2" 
+  region = "us-east-1" 
 }
 
 resource "aws_vpc" "my_vpc" {
@@ -28,13 +28,13 @@ resource "aws_vpc" "my_vpc" {
 resource "aws_subnet" "subnet1" {
   vpc_id            = aws_vpc.my_vpc.id
   cidr_block        = var.subnet1_cidr
-  availability_zone = "us-west-2a" 
+  availability_zone = "us-east-1a" 
 }
 
 resource "aws_subnet" "subnet2" {
   vpc_id            = aws_vpc.my_vpc.id
   cidr_block        = var.subnet2_cidr
-  availability_zone = "us-west-2b" 
+  availability_zone = "us-east-1b" 
 }
 
 resource "aws_instance" "my_instance" {
